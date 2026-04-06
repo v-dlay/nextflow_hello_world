@@ -6,11 +6,6 @@ params.greeting = "Hello"
 params.name = "World"
 params.count = 3
 
-println "Workflow started with parameters:"
-println "  greeting: ${params.greeting}"
-println "  name: ${params.name}"
-println "  count: ${params.count}"
-
 process sayHello {
     output:
     path 'output.txt'
@@ -27,5 +22,9 @@ process sayHello {
 }
 
 workflow {
+    println "Workflow started with parameters:"
+    println "  greeting: ${params.greeting}"
+    println "  name: ${params.name}"
+    println "  count: ${params.count}"
     sayHello()
 }
