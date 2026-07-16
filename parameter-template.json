@@ -1,0 +1,14 @@
+{
+  "greeting": {
+    "description": "Greeting text",
+    "optional": true
+  },
+  "name": {
+    "description": "Name to greet",
+    "optional": true
+  },
+  "count": {
+    "description": "Number of times to repeat the greeting",
+    "optional": true
+  }
+}
